@@ -1,6 +1,11 @@
 function odds(values) {
-    // arrow it
-    return values.filter( => );
+    let myArr = [];
+    for (i = 0; i < values.length; i++) {
+        if (values[i] % 2 == 1) {
+            myArr.push(values[i]);
+        }
+    }
+    return myArr;
 }
 
 console.log(odds([])); //[]
